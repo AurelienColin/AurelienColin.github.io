@@ -5,18 +5,18 @@ from datetime import datetime
 
 # -----------------------------------------------------------------------------
 
-prefix = [
-    """<!DOCTYPE html>
+prefix = """<!DOCTYPE html>
     <html lang="en">
     <head>
-        <meta charset="UTF-8">""",
-    """    <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+        <title>The Digital Barnacle</title>
+        <link rel="icon" href="res/kaggle.png">
+        <link rel="stylesheet" type="text/css" href="styles.css">
         <script src="script.js"></script>
     </head>
     <body>
         <iframe src="menu.html" frameborder="0" style="width: 250px; right: 10px; position: fixed; height:100%"></iframe>'
-    """
-]
+"""
 
 suffix = """
     <div class="cover">
@@ -35,7 +35,7 @@ for filename in glob.glob('res/*/*.json'):
     with open(filename, 'r') as file:
         data = json.load(file)
 
-    lines = [prefix[0], f'    <title>{os.path.splitext(os.path.split(filename)[1])[0]}</title>', prefix[1]]
+    lines = [prefix]
 
     k = 0
     for section_key, section_values in data.items():
@@ -56,7 +56,7 @@ for filename in glob.glob('res/*/*.json'):
             cover = f' onmouseover="changeImage(\'{cover}\')"' if cover and os.path.exists(cover) else ''
 
             lines += [
-                f'        <div class="container" id="container-{k}"{cover}>'
+                f'        <div class="container" id="container-{k}"{cover}>',
                 f'            <h2>',
                 f'                <a href="{href}">{key}</a>',
                 f'                <button id="button-{k}"/>',
