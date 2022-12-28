@@ -1,0 +1,9 @@
+{
+    "Anime & Manga": {
+        "GochiUsa_Faces": {
+            "cover": "res/datasets/GochiUsa_Faces.jpg",
+            "href": "https://www.kaggle.com/datasets/rignak/gochiusa-faces",
+            "abstract": "Too often, categorization datasets have complex semantics (e.g. Imagenet) or are unfunny (e.g. MNIST). Here, we build a dataset contaning faces of nine protagonists from GochiUsa. It can be easily used to test models for categorization, autoencoding or image generation since the semantics are simple. It can also be used for style transfer as the dataset exist with samples from the anime, the manga, colored illustrations by the manga author and drawings from various artists."
+        }
+    }
+}

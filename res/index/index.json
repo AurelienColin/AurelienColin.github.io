@@ -1,0 +1,24 @@
+{
+    "Index": {
+        "Papers": {
+            "cover": "res/index/papers.jpg",
+            "abstract": "A list of my published papers.",
+            "href": "./papers.html"
+        },
+        "Datasets":{
+            "cover": "res/index/datasets.jpg",
+            "abstract": "A list of datasets.",
+            "href": "./datasets.html"
+        },
+        "Experiments":{
+            "cover": "res/index/experiments.jpg",
+            "abstract": "A list of experiments.",
+            "href": "./experiments.html"
+        },
+        "Curriculum Vitae":{
+            "cover": "res/index/curriculum_vitae.jpg",
+            "abstract": "My curriculum Vitae.",
+            "href": "./curriculum_vitae.html"
+        }
+    }
+}
