@@ -1,0 +1,92 @@
+body {
+    background-color: rgba(191, 191, 203, 1);
+    z-index:0;
+}
+
+h1 {
+    margin-left: 25%;
+}
+
+.container {
+    background-color: rgba(120, 118, 157, 1);
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-right: 300px;
+    overflow: hidden;
+    width: 60%;
+    z-index:1;
+}
+
+
+.container h2 {
+    background-color: rgba(120, 118, 157, 1);
+    top: 0;
+    color: white;
+    display: flex;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.container h2 button {
+    margin-left: auto;
+    border: none;
+    background: url("res/down_arrow.png") no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.container p {
+    display: none;
+    width: 0;
+}
+
+.container.expanded p {
+    display: block;
+    text-align: justify;
+    width: 95%;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.container.expanded h2 button {
+    background: url("res/up_arrow.png") no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+
+.container.expanded {
+    background-color: rgba(161, 160, 179, 1);
+}
+
+.cover {
+    width: 250px;
+    height: 350px;
+    right: 10px;
+    bottom: 10px;
+    position: fixed;
+    border: solid;
+}
+
+.cover img {
+    width: 250px;
+    height: 350px;
+}
+
+.meta{
+    font-weight: bold;
+}
+
+.inline{
+    display:block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

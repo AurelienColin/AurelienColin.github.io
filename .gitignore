@@ -1,0 +1,6 @@
+.temp
+.ipynb_checkpoints
+.idea
+__pycache__
+*.py
+*/*/*.json

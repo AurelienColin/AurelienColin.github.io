@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+}
+
+.submenu {
+    display: none;
+}
+
+tr:hover .submenu{
+    display: table;
+    background: url("res/submenu.png") no-repeat scroll 1% 10% transparent;
+    background-color: rgba(120, 118, 157, 1);
+    top: 27px;
+    width: 90%;
+    margin: 5% 5%;
+    padding-top: 27px  !important;
+    background-position: center 5px;
+    border-radius: 5px;
+}
+
+.menu {
+    width:200px;
+    background: url("res/menu.png") no-repeat scroll 1% 10% transparent;
+    padding-top: 37px  !important;
+    background-color: rgba(120, 118, 157, 1);
+    background-position: center 5px;
+    position: fixed;
+    padding: 5px;
+    right: 25px;
+    border-radius: 5px;
+    }
+
+tr {
+    text-align: center;
+}
+
+td {
+    background-color: rgba(86, 81, 139, 1);
+    border-radius: 3px;
+}
+
+.menu_td:hover {
+    background-color: #DDDDDD;
+    cursor: pointer;
+}
